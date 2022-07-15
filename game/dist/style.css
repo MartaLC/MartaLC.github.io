@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+h1{
+	text-align: center;
+	font-family: Helvetica;
+	border: 10px solid black;
+	padding: 2px;
+}
+
+td{
+  height:50px;
+  width:50px;
+  background:rgba(80, 175, 80, 0.3);
+    
+}
+#carte{
+  margin-top: 20px;
+  border-radius: 10px;
+  border:solid black;
+
+}
+
+.game{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.button, #button{
+  font-family: helvetica;
+  text-align: center;
+  border: 10px solid black;
+  padding: 12px 28px;
+  font-size: 20px;
+  border-radius: 12px;
+  background:white;
+}
+
+.button{
+margin-top: 350px;
+
+
+}
+
+
+#button:hover {
+  background: rgba(80, 175, 80, 0.3);
+  cursor: pointer;
+  
+}
+
+#button{
+  margin-top: 50px;
+}
+
+.box, .box2 {
+  width: 20%;
+ 
+
+}
+
+.container-screen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.character-photo{
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.weapon {
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+.fightmap{
+  display: none;
+}
+.weapon-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+fieldset {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5% 5%;
+  padding: 5px;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  margin-top: 10px;
+}

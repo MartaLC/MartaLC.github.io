@@ -1,0 +1,116 @@
+:root{
+	--darkest:#021D3A;
+	--saphhire:#255368;
+	--bright:#E4DFCC;
+	--green:#809667;
+	--gray:#CBCFE0;
+}
+
+#navbar{
+	background-color: var(--bright);
+	position: fixed;
+	margin-top: 0px; 
+	width: 100%;
+	z-index: 500;
+
+}
+.card-img-top{
+	width: 30vw;
+}
+
+#projects, #about, #contact{
+	background-color: var(--bright);
+}
+
+
+
+#contact-links{
+	text-align: center;
+}
+
+.btn{
+	height: 20px
+	width:20px;
+}
+#project-container{
+
+	background-color: var(--green);
+	padding-top: 50px;
+}
+
+#projects_heading, #about_heading, #contact_header{
+	background-color: var(--bright);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border:10px solid var(--darkest);
+	width: 100%;
+	text-align: center;
+}
+
+
+#profile_pic{
+	height: 30px;
+	width: 20px;
+
+}
+.card{
+	margin-top: 80px;
+}
+.img-responsive{
+	width: 100%;
+	height: 200px;
+}
+.card-title{
+	display: inline-block;
+	width: 100%;
+}
+#name{
+	font-size: 6rem;
+}
+#navbar a:hover{
+  border-bottom: 3px solid var(--darkest);
+}
+
+#welcome-section{
+	height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NTc4MjIxMw&ixlib=rb-1.2.1&q=85");
+	background-color: var(--bright);
+	background-size: cover;
+
+}
+#hello{
+	background-color: var(--bright);
+	border-radius: 10px;
+}
+
+.btn{
+	background-color: var(--darkest);
+	color: white;
+	margin-top: 10px;
+}
+
+.btn:hover{
+	color: var(--bright);
+}
+
+@media (max-width: 720px){
+	#name{
+		font-size: 4rem;
+	}
+	#welcome-section{
+		background-image: url('hero-sm.jpg');
+	}
+	.btn:hover{
+		border: 3px solid var(--darkest);
+	}
+	#hello{
+		background-color: var(--bright);
+		width: 100%;
+	}
+	.card-title{
+		font-size: 1rem;
+	}
+	#navbar{
+		width: 100%;
+	}
+}

@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica&family=Montserrat&display=swap');
+
+/*|| General styles */
+
+* {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Montserrat, Helvetica, sans-serif;
+}
+
+h1, h2, h3{
+	font-family: Economica;
+	padding: 15px 0;
+	font-weight: bold;
+}
+h1 {
+	font-size: 40px;
+} 
+h2 {
+	font-size: 30px;
+	background-color: #8cbebb;
+	text-align: center;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #e25941;
+	text-align: center;
+}
+
+h4 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 10px;
+}
+article {
+	background-color: #f8ae49;
+	background-image: linear-gradient(rgba(0.2, 0.1, 0.1, 0.1), rgba(0.2, 0.1, 0.1, 0.3));
+}
+
+legend  {
+	font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #8cbebb;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+
+}
+
+
+/*|| Header and main nav */
+
+header {
+	position:fixed;
+	justify-content: space-between;
+	align-items: center;
+	top:0;
+	left:0;
+	z-index:100 ;
+	width:100%;
+	height:80px;
+	color: #000000;
+	background-color: #94948a;
+}
+
+
+header figure{
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+header nav{
+	 text-align: left;
+	background-color: #94948a;
+	width: 100%;
+	transform: scale(1,0);
+	transform-origin: top; 
+	transition: transform 400ms ease-in-out;
+	
+}
+
+#logo{
+	position: relative;
+	left:34px;
+	top: 0;
+	height: 100%;
+}
+
+nav ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+nav a {
+	color:#000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+nav li{
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+nav a:hover {
+	background-color: #e25941;
+}
+
+/*|| drop-down nav */
+
+#nav-toggle:checked ~ nav {
+	background: #94948a;
+	transform: scale(1,1);
+}
+
+#nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label {
+	position: absolute;
+	top: 0px;
+	left:0px;
+	height: 100%; 
+	display: flex;
+	align-items: center;
+	left:5px;
+}
+
+.nav-toggle-label:hover{
+	background: #e25941;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	background: black;
+	height: 2px;
+	width: 25px;
+	border-radius: 2px;
+	position: relative;
+	}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	content: "";
+	position: absolute;
+}
+
+.nav-toggle-label span::before{
+	bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+	top: 7px;
+}
+
+/* || Section- Accueil*/
+
+#Accueil {
+	display:flex;
+	align-items: center;
+	background-image: linear-gradient(rgba(0.1, 0.1, 0.1, 0.7), rgba(0.1, 0.1, 0.1, 0.7)), url("background.jpg");
+	background-color: #e25941;
+	margin-top: 80px;
+	margin-bottom: 0px;
+	height:700px;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.hero-text {
+  	text-align: center;
+  	color: #f8ae49;
+  	font-weight: bold;
+}
+
+/* || Section- Programme*/
+
+ul p {
+	margin-left: 5%;
+	width: 60%;
+}
+
+.thumbnail {
+	display: flex;
+	align-items: flex-start;
+	height: 15%;
+	width: 15%;
+	margin: 0 0 10px 10px;
+}
+
+
+.container { 
+  display: flex;
+  flex-direction:row;    
+  flex-wrap:wrap;
+  text-align:justify;
+
+  
+}
+
+.text {
+  display:flex;
+
+ }
+.text button {
+	background-color: #8cbebb;
+	color: #000000;
+	padding: 5px 5px;
+	border-radius: 4px;
+	border:none;
+	cursor: pointer;
+	}
+
+
+/* || Section-Réservations*/
+
+fieldset {
+	padding: 20px; 
+	border: 2px solid black;
+	width: 100%;
+	margin:20px auto 20px auto;
+}
+
+.form {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		line-height: 30px;
+		padding: 5px;
+		
+	}
+#reserv-name, #reserv-email, #date {
+	width: 100%;
+	padding:10px;
+}
+
+/* || Section- Contact*/
+
+.container-2 { 
+  display: flex;
+  flex-direction:row;    
+  flex-wrap:wrap;
+  text-align:justify;
+  justify-content: center;
+  width: 70%;
+}
+
+.container-2 input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+.row label {
+	padding: 12px;
+	display: inline-block;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#message{
+	height: 200px;
+}
+
+.col-25 {
+		width: 25%;
+		margin-top: 0;
+		float: left;
+		text-align: left;
+	}
+	.col-75 {
+		width: 75%;
+		margin-top: 0;
+		float: right;
+	}
+
+/*Section-Actualités*/
+
+
+.actu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+.actu .column{
+	width: 100%;
+	flex: 3;
+	padding: 20px 20px 20px 20px;
+}
+.column p{
+	margin-top: 10px;
+}
+
+.fa-facebook {
+ 	background: none;
+ 	color: #3b5998;
+ 	font-size: 30px;
+}
+
+.fa-twitter-square {
+ 	background: none;
+ 	color: #1da1f2;
+ 	font-size: 30px;
+}
+.fa-instagram-square{
+	font-size: 30px;
+	color: #fff;
+		
+}
+
+.actu ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 10px auto;
+}
+
+/*|| Footer*/
+
+footer{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #94948a;
+}
+
+footer nav {
+	width: 100%;
+}
+
+
+footer ul{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+
+footer ul li{
+	margin:0;
+	padding:5px;
+}
+.menu-footer {
+	display: inline-block;
+}
+
+/*|| Media queries*/
+
+@media screen and (min-width: 802px) {
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header{
+		display:flex;
+
+	}
+	header nav {
+		text-align:initial;
+		background:transparent;
+		width:initial;
+		transform:initial;
+		transform-origin: initial;
+		margin:0 0;
+	}
+
+	header nav ul {
+
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		height: 100%;
+	
+	}
+	nav li {
+		margin-bottom: 5px;
+		margin-left: 5px;
+		padding: 5px;
+	}
+
+	footer ul{
+		justify-content:flex-end;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 800px) {
+	
+
+	.container-2{
+		display: block;
+		width: 100%;
+		padding: 5px;
+
+	}
+
+	.col-25, .col-75 {
+		width: 100%;
+		
+	}
+
+	.actu {
+		display: block;
+		margin-top: 0;
+		}
+	.actu .col{
+		width: 100%;
+		}
+
+	.form{
+		display: block;
+
+	}
+	#reservations, #tickets {
+		width: 100%;
+
+	}
+	.text{
+		padding: 5px;
+		margin-right: 10px;
+
+	}
+
+	.container{
+		display:block;
+		}
+	.thumbnail, .text p {
+		width: 50%;
+	}
+
+}	
+
+
