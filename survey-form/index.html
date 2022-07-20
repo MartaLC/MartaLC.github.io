@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+	<div class="container">
+		<h1 id="title" class="text-center mt-5">Interests survey form</h1>
+			<p id="description" class="text-center">Thank you for taking your time to complete this form. It will help us to improve the quality of our service.</p>	
+		<form id="survey-form" action="/action_page.php" >
+			<div class="form-group">
+				<label for="name" id="name-label" >Name</label>
+  			<input type="text" class="form-control" id="name" placeholder="Name" value="" required>
+  		</div>
+  		<div class="form-group">
+  			<label for="email" id="email-label">Email address</label>
+				<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+			</div>
+			<div class="form-group">
+				<label for="number" id="number-label" >Phone number</label>
+  			<input type="number" class="form-control" id="number" placeholder="Phone number" min="10" max="10">
+  			<small id="max-length" class="text-muted">Must be 10 digits long.</small>
+  		</div>
+  		<div class="form-group">
+  			<p class="text-left">How do you like to read about your favorite topics?</p>
+  			<select id="dropdown" class="form-control" name="research" required="">
+	  			<option disabled="" selected="" value="">Click here to select</option>
+	  			<option value="Books">Books</option>
+	  			<option value="Web">Online resources</option>
+	  			<option value="Apps">Phone apps</option>
+	  			<option value="Magazines">Magazines</option>
+	  			<option value="Other">Other</option>
+  			</select>
+  		</div>
+  		<div class="form-group">
+  			<p>Do you exercise at home?</p>
+  			<label>
+					<input class="input-radio" type="radio" name="exercise" id="exercise-y" value="Yes" checked>
+					Yes
+				</label>
+				</div>
+				<div class="form-group">
+					<label>
+				  	<input class="input-radio" type="radio" name="exercise" id="exercise-n" value="No">
+				  	No
+				  </label>
+				</div>
+				<div class="form-group">
+					<p>What genre of movies do you like?</p>
+					<small id="muted-comment" class="text-muted">Check all that apply</small>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="comedy">
+						Comedy
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="romance">
+						Romance
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="thriller">
+						Thriller
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="biopic">
+						Biopic
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="fantasy">
+						Fantasy
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="adventure">
+						Adventure
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="sci-fi">
+						Science-fiction
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="genre" value="crimi">
+						Crime and mystery
+					</label>
+				</div>
+				<div class="form-group">
+					<p>Tell us something about your hobbies</p>
+					<textarea id="hobbies" class="input-textarea" name="hobbies" placeholder="Enter your comment here.."></textarea>
+				</div>
+				<div class="form-group">
+					<button id="submit" class="submit-button" type="submit">Submit</button>
+				</div>
+			</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
