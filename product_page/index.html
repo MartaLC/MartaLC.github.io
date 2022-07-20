@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product landing page</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+	<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+				<a class="navbar-brand" href="#">
+					<img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-matryoshka-womens-day-flatart-icons-outline-flatarticons.png" id="header-img" alt="boutique-logo">
+				</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item-active px-5" >
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+            <li class="nav-item-active px-5" >
+							<a class="nav-link" href="#story">Our story</a>
+						</li>
+						<li class="nav-item-active px-5">
+							<a class="nav-link" href="#form">Contact</a>
+						</li>
+						<li class="nav-item-active px-5">
+							<a class="nav-link" href="#shop">Shop</a>
+						</li>
+						<li class="nav-item-active px-5">
+							<a class="nav-link" href="#pshopping">Personal shopping</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+	<div class="container col-xxl-8 px-4 py-5">
+		<div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+			<div class="col-10 col-sm-12 col-lg-6">
+				<img src="https://images.unsplash.com/photo-1473286835901-04adb1afab03?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzYyNTkxMg&ixlib=rb-1.2.1&q=85" class="d-block mx-lg-auto img-fluid" alt="Colourful photo of shoes and dress by Taylor Simpson on Unsplash " width="700" height="500" id="hero">
+			</div>
+			<div class="col-lg-6">
+				<h1 class="display-5 fw-bold lh-1 mb-3 pt-5" id="home"> Welcome to the Vintage boutique</h1>
+				<p class="lead">This is the place where you can time travel. </p>
+				<p class="text-justify lead">Our boutique opened in 2010. Since then we have been sharing our passion for vintage clothes and accessories with hundreds of satisfied customers. 
+				Join us in a journey back to a romantic time through our carefully selected pieces. </p>
+				<div class="d-grid d-flex justify-content-center">
+					<button class="btn btn-lg px-4 mt-4" id="ourstory">Our story</button>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="divider"><hr></div>
+	<div class="container">
+	  <div class="row justify-content-center">
+	    <div class="col-lg-6 col-sm-12">
+	      <img src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzYyNjY3OQ&ixlib=rb-1.2.1&q=85 " class="d-block mx-lg-auto img-fluid" alt="An image of a retro phone">
+	    </div>
+	    <div class="col-lg-8 col-sm-12 mt-2">
+	      <div class="form my-4">
+	      	<form id="form" action="https://www.freecodecamp.com/email-submit">
+					  <div class="form-group">
+					  	<p class="lead text-center" id="formIntro">Contact us</p>
+					  	<label for="name" id="name-label" >Name</label>
+  						  <input type="text" class="form-control" id="name" placeholder="Name"                  value="" required>
+					    <label for="email">Email address</label>
+					      <input type="email" required class="form-control" id="email"                          placeholder="Example@email.com" name="email">
+					      <small id="emailHelp" class="form-text text-muted">We'll never share                  your email with anyone else.</small>
+					  </div>
+					  <div class="form-group">
+							<label for="number" id="number-label" >Phone number</label>
+			  			  <input type="number" class="form-control" id="number"                               placeholder="Phone number" min="10" max="10">
+			  			  <small id="max-length" class="text-muted">Leave us your phone number                if you wish we call you back</small>
+			  		</div>
+					  <div class="form-group">
+					    <p>Message</p>
+							<textarea id="message" class="input-textarea" name="message"                         placeholder="Enter your message here.."></textarea>
+					  </div>
+					  <div class="d-flex justify-content-center">
+					  	<button type="submit" class="btn btn-lg " id="submit">Submit</button>
+					  </div>
+					</form>
+	      </div>
+	  </div>
+ </div>
+<div class="container-fluid" id="video-container">
+  <div class=" d-flex row embed-responsive justify-content-center">
+    <iframe class="col-8 embed-responsive-item"                                         src="https://www.youtube.com/embed/PQdhobPDDRI" title="YouTube video player"         id="video" allowfullscreen > </iframe>
+  </div>
+</div>
+ <div class="divider"></div>
+ <div class="container" id="pshopping">
+ 	<div class="row p-4">
+ 		<div class="col-lg-12 col-sm-12 text-justify">
+ 		<h2> In order to provide the best customer experience we've decided to add personal shopping as new service.</h2> 
+ 			</div>
+ 		<div class="col-lg-12 col-sm-12">
+ 		  <p class="text-justify lead">It is now possible to contact us and request an             appointment. Those appointments remain extremely limited and exclusive and          will only be possible for three clients a month.  All appointments come with        booking fee and surcharge.</p>
+ 		  <p class="text-justify lead">To request an appointment please contact us via our         <a href="#form" class="hyperlink" >contact form</a>.</p>
+ 		</div>
+ 	</div>
+ </div>
+ <div class="divider"></div>
+ <div class="container" id="shop">
+   <div class="row">
+	    <div class="col-sm">
+          <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?crop=entropy&cs=srgb&fm=jpg&              ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzczNDI0Nw&ixlib=rb-1.2.1&q=85"alt="photo of a shop entrance" class="img-thumbnail">
+	    </div>
+	    <div class="col-sm d-flex align-items-center justify-content-center h3"             id="address">
+	    	<p class="text-center">Our boutique is situated at the following address:
+	    	<br>Vintage boutique,
+	    	<br>1234 Example Street,
+	    	<br>Antartica,
+	    	<br>Example 0987
+	    	</p>
+	    </div>
+	  </div>
+	</div>
+	<div class="divider"></div>
+	<div class="container" id="story">
+		<div class="row">
+			<div class="col-lg-6 col-sm-12" id="storyflex">
+				<p class="text-justify h5">
+					Our shop opened for the first time in 2010. We are aiming to fulfil your            vintage dreams by providing the most unique pieces. We are hoping that our          pieces will become  favourite within your wardrobe. <br>
+				  We strive to source the most unique and beautiful pieces at best prices in          the most ethical aand sustainable way.<br>
+					We source from many places, mainly locally to reduce our carbon footprint           to minimum.
+          <br><br>
+					Vintage boutique team
+				</p>
+			</div>
+			<div class="col-lg-6 col-sm-12 justify-content-center">
+				<img class="img-fluid" src="https://images.unsplash.com/photo-1627509894002-a78becb15d2b?crop=entropy&cs=srgb&fm=jpg&                                                ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzczNDIwNA&ixlib=rb-1.2.1&q=85"              alt="dresses on hangers" width="600px">
+		  </div>
+	  </div>
+  </div>
+  <footer>
+		<p> 2022 Copyright:Vintage boutique</p>
+	</footer>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</body>
+</html>
